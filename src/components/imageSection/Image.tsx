@@ -18,7 +18,10 @@ const ImageSection = () => {
     },
   ];
   return (
-    <section className='absolute left-0 right-0 top-[650px] m-auto flex max-w-[1600px] items-center  justify-center overflow-hidden'>
+    <section
+      id='project'
+      className='absolute left-0 right-0 top-[650px] m-auto flex max-w-[1600px] items-center  justify-center overflow-hidden'
+    >
       <div className='  flex gap-16 overflow-hidden'>
         {Item.map((list, i) => {
           return (

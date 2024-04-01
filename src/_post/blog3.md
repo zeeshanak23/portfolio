@@ -4,7 +4,7 @@ excerpt: 'A small river named Duden flows by their place and supplies it with th
 coverImage: '/images/useState.jpg'
 date: '2024-01-26T05:35:07.322Z'
 author:
-  name: 'Md Zeeshan Akhter'
+  name: 'Md Zeeshan'
   picture: '/images/profile.jpeg'
 ogImage:
   url: ''

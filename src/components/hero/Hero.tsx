@@ -1,7 +1,10 @@
 const Hero = () => {
   return (
-    <section className='m-auto w-[1400px] bg-white pb-[400px] dark:bg-zinc-900 '>
-      <div className='mt-4 flex w-[950px] flex-col gap-6 p-20'>
+    <section
+      id='about'
+      className='m-auto w-[1400px] bg-white pb-[400px] dark:bg-zinc-900 '
+    >
+      <div className=' flex w-[950px] flex-col gap-6 p-20'>
         <h1 className='text-6xl'>
           I'm Zeeshan a Professional Coder and a Open Source Contributor
         </h1>

@@ -56,7 +56,7 @@ const Article: FC<{
       <Header />
       <section
         className=''
-        id='blog'
+        id='article'
         onClick={() => {
           menuActive.active && setMenuActive({ active: false, menu: '' });
         }}

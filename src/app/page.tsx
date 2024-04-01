@@ -24,8 +24,7 @@ import MoonLight from '@/components/logo/Moonlight';
 // to customize the default configuration.
 
 export default function HomePage() {
-  const [enabled, setEnabled] = React.useState(false);
-  const [active, SetActive] = React.useState<boolean>();
+  const [active, SetActive] = React.useState<boolean>(true);
 
   const changeColor = () => {
     SetActive(true);
@@ -74,7 +73,7 @@ export default function HomePage() {
         </Head>
         <body className={`${active ? 'light' : 'dark'}`}>
           <section className='bg-gray-100 dark:bg-black dark:text-white  '>
-            <div className='m-auto flex w-[1400px] items-center justify-between bg-white p-4 dark:bg-zinc-900'>
+            <div className='m-auto flex w-[1400px] items-center justify-between bg-white p-8 dark:bg-zinc-900'>
               <button
                 onClick={() => changeColor()}
                 className='h-10 w-10 cursor-pointer'

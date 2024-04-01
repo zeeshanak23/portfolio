@@ -8,8 +8,7 @@ import Sunlight from '@/components/logo/Sunlight';
 import MoonLight from '@/components/logo/Moonlight';
 
 const PostBody: FC<{ slug: string }> = ({ slug }) => {
-  const [enabled, setEnabled] = useState(false);
-  const [active, SetActive] = useState<boolean>();
+  const [active, SetActive] = useState<boolean>(true);
 
   const changeColor = () => {
     SetActive(true);
