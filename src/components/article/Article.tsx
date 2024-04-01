@@ -34,21 +34,21 @@ const Article: FC<{
     {
       image: '/images/profile.jpeg',
       name: 'Zeeshan',
-      post: 'Full stack developer',
-      date: 'Jan 2024 - Mar 2024',
+      post: 'Python Developer',
+      date: 'Apr 2021 - Feb 2022',
     },
     {
       image: '/images/profile.jpeg',
       name: 'Zeeshan',
       post: 'Full stack developer',
-      date: 'Jan 2024 - Mar 2024',
+      date: 'Present',
     },
-    {
-      image: '/images/profile.jpeg',
-      name: 'Zeeshan',
-      post: 'Full stack developer',
-      date: 'Jan 2024 - Mar 2024',
-    },
+    // {
+    //   image: '/images/profile.jpeg',
+    //   name: 'Zeeshan',
+    //   post: 'Full stack developer',
+    //   date: 'Jan 2024 - Mar 2024',
+    // },
   ];
 
   return (
@@ -190,7 +190,7 @@ const Article: FC<{
                       </div>
                       <div>
                         <h3 className='text-sm'>{item.name}</h3>
-                        <div className='flex items-center justify-between gap-8 text-[#888]'>
+                        <div className='flex w-[300px] items-center  justify-between text-[#888]'>
                           <p>{item.post}</p>
                           <p>{item.date}</p>
                         </div>
