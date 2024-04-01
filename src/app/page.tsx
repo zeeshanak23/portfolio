@@ -7,7 +7,6 @@ import Hero from '@/components/hero/Hero';
 import ImageSection from '@/components/imageSection/Image';
 import Head from 'next/head';
 import * as React from 'react';
-import { Switch } from '@headlessui/react';
 import { SunIcon } from '@heroicons/react/24/solid';
 import { MoonIcon } from '@heroicons/react/24/solid';
 import { useEffect } from 'react';
