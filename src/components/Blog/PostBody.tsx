@@ -4,8 +4,8 @@ import Head from 'next/head';
 import DateFormater from './DateFormater';
 import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
-import { SunIcon } from '@heroicons/react/24/solid';
-import { MoonIcon } from '@heroicons/react/24/solid';
+import Sunlight from '@/components/logo/Sunlight';
+import MoonLight from '@/components/logo/Moonlight';
 
 const PostBody: FC<{ slug: string }> = ({ slug }) => {
   const [enabled, setEnabled] = useState(false);
@@ -68,13 +68,13 @@ const PostBody: FC<{ slug: string }> = ({ slug }) => {
                   onClick={() => changeColor()}
                   className='h-10 w-10 cursor-pointer'
                 >
-                  <SunIcon />
+                  <Sunlight />
                 </button>
                 <button
                   onClick={() => color()}
                   className='h-8 w-8 cursor-pointer'
                 >
-                  <MoonIcon />
+                  <MoonLight />
                 </button>
               </div>
               <div className='m-auto mt-[100px] flex w-[full] flex-col items-center  justify-center rounded-lg p-2  md:w-[1200px]  '>

@@ -7,8 +7,6 @@ import Hero from '@/components/hero/Hero';
 import ImageSection from '@/components/imageSection/Image';
 import Head from 'next/head';
 import * as React from 'react';
-import { SunIcon } from '@heroicons/react/24/solid';
-import { MoonIcon } from '@heroicons/react/24/solid';
 import { useEffect } from 'react';
 
 /**
@@ -18,8 +16,8 @@ import { useEffect } from 'react';
  * You can override the next-env if the type is important to you
  * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
  */
-import Logo from '~/svg/Logo.svg';
-import { tree } from 'next/dist/build/templates/app-page';
+import Sunlight from '@/components/logo/Sunlight';
+import MoonLight from '@/components/logo/Moonlight';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -81,13 +79,13 @@ export default function HomePage() {
                 onClick={() => changeColor()}
                 className='h-10 w-10 cursor-pointer'
               >
-                <SunIcon />
+                <Sunlight />
               </button>
               <button
                 onClick={() => color()}
                 className='h-8 w-8 cursor-pointer'
               >
-                <MoonIcon />
+                <MoonLight />
               </button>
             </div>
 
