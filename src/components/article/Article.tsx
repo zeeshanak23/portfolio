@@ -1,6 +1,11 @@
 import DateFormater from '@/components/Blog/DateFormater';
 import Header from '@/components/header/Header';
-import { faArrowDown, faFilePdf } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowDown,
+  faArrowRight,
+  faFilePdf,
+  faGreaterThan,
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC, useState } from 'react';
 
@@ -56,13 +61,13 @@ const Article: FC<{
           menuActive.active && setMenuActive({ active: false, menu: '' });
         }}
       >
-        <div className='m-auto flex w-[1400px] items-center justify-between bg-white p-12 '>
+        <div className='m-auto flex w-[1400px] items-center justify-between bg-white p-12 dark:bg-zinc-900 '>
           <div className='m-auto grid grid-rows-3 gap-2 pt-7  sm:flex-row md:w-[1200px]  md:items-center md:gap-6 '>
             {morePost.map((blog, i) => {
               return (
                 <div
                   key={i}
-                  className='  h-[auto] w-[350px] rounded-lg bg-white  md:max-h-[600px] md:w-[700px]'
+                  className='  h-[auto] w-[350px] rounded-lg bg-white md:max-h-[600px]  md:w-[700px] dark:bg-zinc-900'
                 >
                   <div
                     onMouseOver={() => {
@@ -71,10 +76,10 @@ const Article: FC<{
                     onMouseLeave={() => {
                       setActive('');
                     }}
-                    className={`relative z-20 cursor-pointer rounded-lg border-2 border-opacity-40 bg-white
-                p-2 text-[#666]
+                    className={`relative z-20 cursor-pointer rounded-lg border-2 border-opacity-40 bg-white p-2
+                text-[#666] transition-all
               
-                transition-all  lg:m-0  `}
+                lg:m-0  dark:bg-zinc-900  `}
                   >
                     <a href={`/blog/${blog.slug}`}>
                       <div className='flex items-center justify-between'>
@@ -86,7 +91,7 @@ const Article: FC<{
                           />
                         </div>
                         <div className=''>
-                          <h2 className='h-[100px] w-[450px] pt-6  text-2xl   font-[600] text-black transition-all  '>
+                          <h2 className='h-[100px] w-[450px] pt-6  text-2xl font-[600]  text-black transition-all dark:text-white  '>
                             <a href={`/blog/${blog.slug}`}>{blog.title}</a>
                           </h2>
                           <hr className='mb-4 mt-4 bg-gray-400' />
@@ -101,8 +106,9 @@ const Article: FC<{
                             <span className='items-centerfont-normal flex  text-[#666] '>
                               {blog.author.name}
                             </span>
-                            <button className='text-base font-medium text-teal-400'>
+                            <button className='flex w-[105px] items-center justify-between text-base font-medium text-teal-400'>
                               Read article
+                              <FontAwesomeIcon size='sm' icon={faArrowRight} />
                             </button>
                           </div>
                         </div>
@@ -175,7 +181,7 @@ const Article: FC<{
                 {Work.map((item, i) => {
                   return (
                     <div key={i} className='flex items-center gap-4 py-2'>
-                      <div className=' rounded-full border bg-white p-2'>
+                      <div className=' rounded-full border bg-white p-2 dark:bg-zinc-900'>
                         <img
                           className='h-[40px] w-[40px] rounded-full object-cover'
                           src={item.image}
@@ -195,11 +201,16 @@ const Article: FC<{
               </div>
               <a
                 href='/pdf/zeeshan.pdf'
-                className='flex items-center justify-center rounded-md bg-gray-100 p-2 text-center'
+                className='flex items-center justify-center rounded-md bg-gray-100 p-2 text-center dark:bg-black'
                 download={'Resume'}
               >
-                <button className='mr-2 font-medium'>Download Resume</button>
-                <FontAwesomeIcon icon={faArrowDown} color='#888' />
+                <button className='mr-2 font-medium  dark:text-white'>
+                  Download Resume
+                </button>
+                <FontAwesomeIcon
+                  icon={faArrowDown}
+                  className='text[#888] dark:text-white'
+                />
               </a>
             </div>
           </div>

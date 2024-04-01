@@ -1,19 +1,37 @@
 ---
-title: 'Free E-BOOK on Design Patterns In Use'
+title: 'What are React Hooks'
 excerpt: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.'
-coverImage: '/images/blog3.jpg'
+coverImage: '/images/useState.jpg'
 date: '2024-01-26T05:35:07.322Z'
 author:
-  name: 'ONLINE BABA'
-  picture: '/img/blog/classroom2.jpg'
+  name: 'Md Zeeshan Akhter'
+  picture: '/images/profile.jpeg'
 ogImage:
-  url: '/img/blog/classroom2.jpg'
+  url: ''
 ---
 
-## Advantages of Online Courses
+## What are React Hooks?
 
-The biggest advantage of an online course is that your classroom and instructor (theoretically) are available 24 hours a day, seven days a week. Your only excuse for missing class is not getting online! Otherwise, everything is available to you. You can get announcements, access notes, review assignments, take practice quizzes, discuss questions, chat with fellow students and study any time you want. Other than certain due dates, you make your own schedule for completing the requirements of the course.
+Hooks are the JavaScript utility functions provided by React that let you use different React features from your components. Hooks can be of two forms:
 
-You can study any time you want. You can study with whomever you want. You can study wearing anything you want (or nothing if you prefer!) Online courses give you the flexibility to spend time with work, family, friends, significant others or any other activity you like. You still have to complete the work (and this flexibility can be your downfall; see disadvantages) but for many people, with continually changing work schedules or people who make frequent business trips, parents with small children, students caring for others or whose health prevents them from making it to campus on a regular basis, students whose friends or boyfriend/girlfriend drop in unexpectedly, or for those days when the surf and/or snow is wicked, this method of course delivery can't be beat.
+Built-in — provided by React.
 
-Online students often find that their family, friends and/or boy-girl-friends get involved in the course. Oftentimes, a student will study with that special someone present. Children may take an interest in the online environment. Parents may look over the shoulder of an online student while they are surfing across the web. In short, everyone in the household gets involved in learning. Having the support of your family and friends makes you more likely to succeed.
+Custom — created by developers, abstracting reusable logic.
+
+Let us discuss about most commonly used built-in React Hook i.e. useState.
+
+# State Hooks
+
+In React, components need to “remember” things. Why? Because when React re-renders the component, it renders it from scratch. Local variables do not retain the data between renders. State lets a component remember information. This is the reason we need to use state variables.
+
+Here, the useState() is the hook which takes in the initial value of variable named state as an argument.
+
+The useState returns an array of exactly two values, state and setState.
+
+state — The current state variable. During the first render, it will take the value as initState.
+
+setState — You cannot update the state variable directly. useState hook provides you a set function that lets you update the state variable. When you call this function with a new value, it triggers a re-render of the component, updating the state to the new value.
+
+Think of different real-life situations where useState can make your React projects more powerful. Try it out yourself by practicing different scenarios!
+
+Thank you for reading, and Happy Coding!

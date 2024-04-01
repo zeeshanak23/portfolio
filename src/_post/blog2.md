@@ -1,37 +1,61 @@
 ---
-title: 'My favorite coding question to give candidates'
-excerpt: 'A small river named Duden flows by their place and supplies it with the necessary regelialia.'
+title: 'Create a personal website portfolio by using HTML and CSS'
+excerpt: 'Benefits of having a Portfolio Website.'
 coverImage: '/images/blog1.jpg'
 date: '2024-01-26T05:35:07.322Z'
 author:
-  name: 'OFFLINE GURU'
-  picture: '/img/blog/classroom3.jpg'
+  name: 'Zeeshan Akhter'
+  picture: '/images/profile.jpeg'
 ogImage:
-  url: '/img/blog/classroom3.jpg'
+  url: ''
 ---
 
-Offline classes have many advantages that make them an attractive option for many students. In this blog, we will discuss some of the advantages of offline classes
+## Benefits of having a Portfolio Website
 
-## Face-to-face interaction
+it provides a platform to showcase your relevant skills and experience
 
-Offline classes provide students with the opportunity to interact face-to-face with their instructors and peers. If the student faces any difficulty in any subject, he or she can ask the questions, and the teachers will have no problem answering them. This allows for more personalized learning and a deeper understanding.
+it shows your personality
 
-## Hands-on learning
+it lets hiring managers find you instead of you reaching out to them
 
-Offline classes also involve hands-on learning such as group projects, experiments, and field trips. This allows students to learn more and gain knowledge from everywhere. This also allows students to apply their knowledge for deeper understanding.
+you are easily searchable on search engines like Google
 
-## Reduced distraction
+# What is Bootstrap?
 
-Offline classes provide a structured environment that can help students stay focused and reduce distractions. This can be particularly helpful for students who struggle with online learning, which can be distracting due to the many online distractions, such as social media, email, and instant messaging.
+Bootstrap is a popular front-end CSS framework which is used to develop responsive and mobile friendly websites. The latest release of Bootstrap is version 5.
 
-## Networking Opportunities:
+## Folder Structure
 
-Offline classes provide students with opportunities to network with their peers and instructors. This can be particularly helpful for students who are looking to build professional relationships in their field of study.
+The folder structure consists of index.html, style.css, and script.js files and an images folder. We'll write all CSS in the style.css file and the JavaScript in the script.js file .
 
-## Better Assessment:
+In the index.html file, you can see the HTML boilerplate code with the Bootstrap CDN, font awesome kit, and a link to the external style sheet and JavaScript.
 
-Offline classes allow for a more comprehensive and accurate assessment of student performance. Instructors can observe students in real time and provide immediate feedback on their work. This can help students identify areas of weakness and work to improve their performance.
+## How to Add a Navigation Menu to Your Portfolio
 
-## Improved Time Management:
+Now, let's work on adding a navigation menu in our project. It will help visitors find the relevant info they're looking for.
 
-Offline classes provide students with a structured schedule to help them manage their time more effectively. This can be particularly helpful for students who struggle with procrastination or time management.
+We will use Bootstrap's fixed-top class in nav element to keep the navbar at the top of the page. The navbar also has a navbar-brand class where we keep the name of the person as a brand.
+
+## The navbar has the following features:
+
+It has six links: home, about, services, portfolio, contact, and footer
+
+It has a transparent background. We will add a dark background on page scrolling later.
+
+It toggles on smaller devices
+
+## How to Add a Hero Header to the Portfolio
+
+Now, we will be adding a hero image with some text in the center. A hero image is a web design term which refers to a high quality full width image that displays the company or individual's main goals, a representative image, photo, or other eye-catching elements. It helps attract users to your site.
+
+## Conclusion
+
+This is how you can create a complete responsive portfolio website using HTML, CSS, JavaScript, and Bootstrap 5 .
+
+In this blog post we saw some of the benefits of creating a portfolio website for web developers and designers. We divided the whole website into different sections and discussed each one individually as we built it.
+
+You can customize this website based on your own use cases.
+
+I hope you found this post useful.
+
+Happy Coding!
