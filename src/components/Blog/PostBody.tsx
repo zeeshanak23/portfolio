@@ -62,7 +62,7 @@ const PostBody: FC<{ slug: string }> = ({ slug }) => {
             <Header />
 
             <div className='m-auto w-[1400px] bg-white dark:bg-zinc-900 dark:text-white'>
-              <div className='m-auto flex w-[1400px] items-center justify-between bg-white p-8 dark:bg-zinc-900'>
+              <div className='m-auto flex w-[1400px] items-center justify-between bg-white p-12 dark:bg-zinc-900'>
                 <button
                   onClick={() => changeColor()}
                   className='h-10 w-10 cursor-pointer'
@@ -76,7 +76,7 @@ const PostBody: FC<{ slug: string }> = ({ slug }) => {
                   <MoonLight />
                 </button>
               </div>
-              <div className='m-auto mt-[100px] flex w-[full] flex-col items-center  justify-center rounded-lg p-2  md:w-[1200px]  '>
+              <div className='m-auto mt-[20px] flex w-[full] flex-col items-center  justify-center rounded-lg p-2  md:w-[1200px]  '>
                 <img
                   src={blogPost.coverImage}
                   className='  h-[250px]  w-[full] rounded-lg  border-4 border-gray-400  object-cover p-1 md:h-[600px] md:w-[1200px]'
