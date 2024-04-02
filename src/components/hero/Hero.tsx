@@ -2,10 +2,10 @@ const Hero = () => {
   return (
     <section
       id='about'
-      className='m-auto w-[1400px] bg-white pb-[400px] dark:bg-zinc-900 '
+      className='m-auto w-[1400px] bg-white pb-[300px] md:pb-[400px] dark:bg-zinc-900 '
     >
-      <div className=' flex w-[950px] flex-col gap-6 p-20'>
-        <h1 className='text-6xl'>
+      <div className='flex w-[350px] flex-col gap-6  p-4 md:w-[950px] md:p-20'>
+        <h1 className='text-4xl md:text-6xl'>
           I'm Zeeshan a Professional Coder and a Open Source Contributor
         </h1>
         <p className='text-lg text-[#888]'>

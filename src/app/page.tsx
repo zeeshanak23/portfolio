@@ -18,6 +18,9 @@ import { useEffect } from 'react';
  */
 import Sunlight from '@/components/logo/Sunlight';
 import MoonLight from '@/components/logo/Moonlight';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import Menu from '@/components/MenuTabs/Menu';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -25,6 +28,11 @@ import MoonLight from '@/components/logo/Moonlight';
 
 export default function HomePage() {
   const [active, SetActive] = React.useState<boolean>(true);
+  const [open, SetOpen] = React.useState<boolean>();
+
+  const openMenu = () => {
+    SetOpen(true);
+  };
 
   const changeColor = () => {
     SetActive(true);
@@ -66,26 +74,31 @@ export default function HomePage() {
   }, []);
   return (
     <html>
-      {/* className={`${darkMode ? 'bg-red-200' : 'bg-black'}`} */}
       <main>
         <Head>
           <title>Portfolio</title>
         </Head>
         <body className={`${active ? 'light' : 'dark'}`}>
-          <section className='bg-gray-100 dark:bg-black dark:text-white  '>
-            <div className='m-auto flex w-[1400px] items-center justify-between bg-white p-8 dark:bg-zinc-900'>
-              <button
-                onClick={() => changeColor()}
-                className='h-10 w-10 cursor-pointer'
-              >
-                <Sunlight />
-              </button>
-              <button
-                onClick={() => color()}
-                className='h-8 w-8 cursor-pointer'
-              >
-                <MoonLight />
-              </button>
+          <section className=' bg-gray-100  dark:bg-black dark:text-white  '>
+            <div className='m-auto flex w-[100vw] items-center justify-between bg-white p-2 md:w-[1400px] md:p-8 dark:bg-zinc-900'>
+              <div className='flex items-center md:w-[1400px] md:justify-between'>
+                <button
+                  onClick={() => changeColor()}
+                  className='h-[40px] w-[40px] cursor-pointer md:h-10 md:w-10'
+                >
+                  <Sunlight />
+                </button>
+                <button
+                  onClick={() => color()}
+                  className='h-8 w-8 cursor-pointer'
+                >
+                  <MoonLight />
+                </button>
+              </div>
+
+              <div className='mr-6'>
+                <Menu />
+              </div>
             </div>
 
             <Header />

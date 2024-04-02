@@ -20,15 +20,18 @@ const ImageSection = () => {
   return (
     <section
       id='project'
-      className='absolute left-0 right-0 top-[700px] m-auto flex max-w-[1600px] items-center  justify-center overflow-hidden'
+      className='absolute left-0 right-0 top-[900px] m-auto flex w-full  items-center justify-center overflow-hidden md:top-[700px]   md:w-[1490px]'
     >
-      <div className='  flex gap-16 overflow-hidden'>
+      <div className='  flex gap-4 overflow-hidden md:gap-16'>
         {Item.map((list, i) => {
           return (
-            <div key={i} className=' odd:rotate-2 even:-rotate-2'>
+            <div
+              key={i}
+              className='first:hidden odd:rotate-2 even:-rotate-2 md:first:flex'
+            >
               <a href={list.link}>
                 <img
-                  className='h-[400px] w-[350px] cursor-pointer overflow-hidden rounded-xl object-cover'
+                  className='h-[250px] w-[200px] cursor-pointer overflow-hidden rounded-xl object-cover md:h-[400px] md:w-[350px]'
                   src={list.content}
                   alt=''
                 />

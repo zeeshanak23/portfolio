@@ -61,8 +61,8 @@ const Article: FC<{
           menuActive.active && setMenuActive({ active: false, menu: '' });
         }}
       >
-        <div className='m-auto flex w-[1400px] items-center justify-between bg-white p-12 dark:bg-zinc-900 '>
-          <div className='m-auto grid grid-rows-3 gap-2 pt-7  sm:flex-row md:w-[1200px]  md:items-center md:gap-6 '>
+        <div className='m-auto flex w-full flex-col bg-white  md:w-[1400px] md:flex-row md:items-center md:justify-between md:p-12 dark:bg-zinc-900 md:dark:bg-zinc-900 '>
+          <div className='m-auto grid w-[400px] grid-rows-3 gap-2 p-2 pt-7 sm:flex-row  md:w-[1200px] md:items-center  md:gap-6 dark:bg-zinc-900 '>
             {morePost.map((blog, i) => {
               return (
                 <div
@@ -83,20 +83,20 @@ const Article: FC<{
                   >
                     <a href={`/blog/${blog.slug}`}>
                       <div className='flex items-center justify-between'>
-                        <div>
+                        <div className='mr-2'>
                           <img
                             src={blog.coverImage}
                             alt=''
-                            className=' h-[200px] w-[200px]  rounded-md object-cover'
+                            className=' h-[200px] w-[200px]  rounded-md   object-cover md:w-[200px]'
                           />
                         </div>
                         <div className=''>
-                          <h2 className='h-[100px] w-[450px] pt-6  text-2xl font-[600]  text-black transition-all dark:text-white  '>
+                          <h2 className='h-[100px] w-[250px] pt-6 text-xl font-[600]  text-black transition-all  md:w-[450px] md:text-2xl dark:text-white  '>
                             <a href={`/blog/${blog.slug}`}>{blog.title}</a>
                           </h2>
                           <hr className='mb-4 mt-4 bg-gray-400' />
 
-                          <div className='flex w-full items-center gap-6 text-[15px] font-normal  text-[#666]  md:w-[400px]'>
+                          <div className='flex w-full items-center gap-3 text-[15px] font-normal text-[#666]  md:w-[400px]  md:gap-6'>
                             <DateFormater dateString={blog.date} />
                             <img
                               src={blog.author.picture}
@@ -106,7 +106,7 @@ const Article: FC<{
                             <span className='items-centerfont-normal flex  text-[#666] '>
                               {blog.author.name}
                             </span>
-                            <button className='flex w-[105px] items-center justify-between text-base font-medium text-teal-400'>
+                            <button className='hidden items-center justify-between font-medium text-teal-400 md:flex md:w-[105px] md:text-base'>
                               Read article
                               <FontAwesomeIcon size='sm' icon={faArrowRight} />
                             </button>
@@ -122,9 +122,9 @@ const Article: FC<{
               );
             })}
           </div>
-          <div>
-            <div className='flex flex-col gap-4 rounded-lg border border-[#eee] p-6'>
-              <div className='flex'>
+          <div className='ml-4  w-[350px]  md:w-[400px] '>
+            <div className='flex flex-col gap-4 rounded-lg border border-[#eee] bg-white p-6 dark:bg-zinc-900'>
+              <div className='flex items-center'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   fill='none'
@@ -142,7 +142,7 @@ const Article: FC<{
                 <p className='ml-4 font-medium'>Stay up to date</p>
               </div>
 
-              <p className='w-[400px]'>
+              <p className='md:w-[400px]'>
                 Get notified when I publish something new, and unsubscribe at
                 any time
               </p>
@@ -158,7 +158,7 @@ const Article: FC<{
               </div>
             </div>
 
-            <div className='mt-10 flex flex-col gap-4 rounded-lg border border-[#eee] p-6'>
+            <div className='mt-4 flex flex-col gap-4 rounded-lg border border-[#eee] bg-white p-6 md:mt-10 dark:bg-zinc-900'>
               <div className='flex'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -190,7 +190,7 @@ const Article: FC<{
                       </div>
                       <div>
                         <h3 className='text-sm'>{item.name}</h3>
-                        <div className='flex w-[300px] items-center  justify-between text-[#888]'>
+                        <div className='flex w-[220px] items-center justify-between  text-[#888] md:w-[275px]'>
                           <p>{item.post}</p>
                           <p>{item.date}</p>
                         </div>
