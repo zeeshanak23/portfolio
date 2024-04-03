@@ -117,7 +117,7 @@ const Article: FC<{
                     </a>
                   </div>
                   {active === blog.author.name && (
-                    <div className='relative z-0 -mt-[220px] h-[220px] w-full rounded-lg   bg-gradient-to-r  from-[#f2b5d4]  via-pink-200 to-[#7bdff2]   opacity-75 blur '></div>
+                    <div className='relative z-0 -mt-[185px] h-[185px] w-full rounded-lg   bg-gradient-to-r  from-[#f2b5d4]  via-pink-200 to-[#7bdff2]   opacity-75 blur '></div>
                   )}
                 </div>
               );
