@@ -120,7 +120,7 @@ const Article: FC<{
               );
             })}
           </div>
-          <div className='ml-2 w-[93vw] md:w-[400px]'>
+          <div className='ml-2 w-[96vw] md:w-[400px]'>
             <div className='flex flex-col gap-4 rounded-lg border border-[#eee] bg-white p-6 dark:bg-zinc-900'>
               <div className='flex items-center'>
                 <svg
