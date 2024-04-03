@@ -1,5 +1,4 @@
 import DateFormater from '@/components/Blog/DateFormater';
-import Header from '@/components/header/Header';
 import {
   faArrowDown,
   faArrowRight,
@@ -53,7 +52,6 @@ const Article: FC<{
 
   return (
     <>
-      <Header />
       <section
         className=''
         id='article'
@@ -61,8 +59,8 @@ const Article: FC<{
           menuActive.active && setMenuActive({ active: false, menu: '' });
         }}
       >
-        <div className='m-auto flex w-full flex-col bg-white  md:w-[1400px] md:flex-row md:items-center md:justify-between md:p-12 dark:bg-zinc-900 md:dark:bg-zinc-900 '>
-          <div className='m-auto grid w-[400px] grid-rows-3 gap-2 p-2 pt-7 sm:flex-row  md:w-[1200px] md:items-center  md:gap-6 dark:bg-zinc-900 '>
+        <div className='m-auto flex  w-[100%] flex-col bg-white md:w-[1400px] md:flex-row md:items-center md:justify-between md:p-12 dark:bg-zinc-900 md:dark:bg-zinc-900 '>
+          <div className='m-auto grid w-[100%] grid-rows-3 gap-2 p-2 pt-7 sm:flex-row  md:w-[1200px] md:items-center  md:gap-6 dark:bg-zinc-900 '>
             {morePost.map((blog, i) => {
               return (
                 <div
@@ -122,7 +120,7 @@ const Article: FC<{
               );
             })}
           </div>
-          <div className='ml-4  w-[350px]  md:w-[400px] '>
+          <div className='ml-2  w-[350px]  md:w-[400px] '>
             <div className='flex flex-col gap-4 rounded-lg border border-[#eee] bg-white p-6 dark:bg-zinc-900'>
               <div className='flex items-center'>
                 <svg
