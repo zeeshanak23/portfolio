@@ -34,6 +34,9 @@ const ImageSection = () => {
       id='project'
       className='m-auto w-[100vw] overflow-hidden bg-white p-4 md:w-[1400px] md:px-16 dark:bg-zinc-900'
     >
+      <h1 className='m-auto mb-2 bg-white text-2xl font-medium md:mb-10 md:w-[1400px] md:text-5xl dark:bg-zinc-900'>
+        Project.
+      </h1>
       <div>
         <div className='flex flex-col justify-between gap-5 md:flex-row'>
           {Item.map((list, i) => {

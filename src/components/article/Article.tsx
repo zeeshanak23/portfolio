@@ -59,8 +59,11 @@ const Article: FC<{
           menuActive.active && setMenuActive({ active: false, menu: '' });
         }}
       >
+        <h1 className='m-auto bg-white px-4 pt-12 text-3xl font-medium md:w-[1400px] md:px-14 md:text-5xl dark:bg-zinc-900'>
+          Blog.
+        </h1>
         <div className='m-auto flex  w-[100%] flex-col bg-white md:w-[1400px] md:flex-row md:items-center md:justify-between md:p-12 dark:bg-zinc-900 md:dark:bg-zinc-900 '>
-          <div className='m-auto grid w-[100%] grid-rows-3 gap-2 p-2 pt-7 sm:flex-row  md:w-[1200px] md:items-center  md:gap-6 dark:bg-zinc-900 '>
+          <div className='m-auto grid w-[100%] grid-rows-3 gap-2 px-4 py-2  sm:flex-row  md:w-[1200px] md:items-center  md:gap-6 dark:bg-zinc-900 '>
             {morePost.map((blog, i) => {
               return (
                 <div
@@ -85,7 +88,7 @@ const Article: FC<{
                           <img
                             src={blog.coverImage}
                             alt=''
-                            className=' h-[200px] w-[200px]  rounded-md   object-cover md:w-[200px]'
+                            className=' h-[160px] w-[200px]  rounded-md   object-cover md:w-[200px]'
                           />
                         </div>
                         <div className=''>
@@ -120,7 +123,7 @@ const Article: FC<{
               );
             })}
           </div>
-          <div className='ml-2 w-[96vw] md:w-[400px]'>
+          <div className='ml-2 w-[96vw] px-2 md:w-[400px]'>
             <div className='flex flex-col gap-4 rounded-lg border border-[#eee] bg-white p-6 dark:bg-zinc-900'>
               <div className='flex items-center'>
                 <svg
