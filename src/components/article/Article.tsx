@@ -120,8 +120,8 @@ const Article: FC<{
               );
             })}
           </div>
-          <div className='pl-2'>
-            <div className='flex w-[100vw] flex-col gap-4 rounded-lg border border-[#eee] bg-white p-6 dark:bg-zinc-900'>
+          <div className='ml-2 w-[93vw] md:w-[400px]'>
+            <div className='flex flex-col gap-4 rounded-lg border border-[#eee] bg-white p-6 dark:bg-zinc-900'>
               <div className='flex items-center'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -156,7 +156,7 @@ const Article: FC<{
               </div>
             </div>
 
-            <div className='mt-4 flex w-[100%]  flex-col gap-4 rounded-lg border border-[#eee]  bg-white p-6 md:mt-10 dark:bg-zinc-900'>
+            <div className='mt-4 flex flex-col gap-4 rounded-lg border border-[#eee]  bg-white p-6 md:mt-10 dark:bg-zinc-900'>
               <div className='flex '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
