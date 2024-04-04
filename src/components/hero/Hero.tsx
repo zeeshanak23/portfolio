@@ -5,18 +5,9 @@ const Hero = () => {
       className='m-auto w-[100%] bg-white md:w-[1400px]  dark:bg-zinc-900 '
     >
       <div className='flex w-[350px] flex-col gap-6  p-4 md:w-[950px] md:p-20'>
-        <h1 className='text-4xl md:text-6xl'>
-          I'm Zeeshan a Professional Coder and a Open Source Contributor
-        </h1>
-        <p className='text-lg text-[#888]'>
-          Hi, I’m Zeeshan, a dedicated and experienced GitHub Field Expert and
-          Open Source Contributor. My passion lies in building strong
-          relationships within the developer community, and In this project are
-          web applications that use multiple development technologies, such as
-          HTML, CSS, JavaScript. and also use different tools and techniques
-          when working on full stack development projects, and the common ones
-          include an IDE, programming languages, GitHub, image editors, and
-          development frameworks. technology.
+        <h1 className='text-4xl md:text-5xl'>Md Zeeshan Akhter</h1>
+        <p className='text-base text-[#888]'>
+          I’m a Professional Coder and a Open Source Contributor.
         </p>
         <div className='flex items-center gap-6'>
           <svg

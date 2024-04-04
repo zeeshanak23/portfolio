@@ -62,7 +62,7 @@ const Article: FC<{
         <h1 className='m-auto bg-white px-4 pt-12 text-3xl font-medium md:w-[1400px] md:px-14 md:text-5xl dark:bg-zinc-900'>
           Blog.
         </h1>
-        <div className='m-auto flex  w-[100%] flex-col bg-white md:w-[1400px] md:flex-row md:items-center md:justify-between md:p-12 dark:bg-zinc-900 md:dark:bg-zinc-900 '>
+        <div className='m-auto flex  w-[100%] flex-col bg-white md:w-[1400px] md:flex-row md:items-center md:justify-between md:px-10 md:pt-4 dark:bg-zinc-900 md:dark:bg-zinc-900 '>
           <div className='m-auto grid w-[100%] grid-rows-3 gap-2 px-4 py-2  sm:flex-row  md:w-[1200px] md:items-center  md:gap-6 dark:bg-zinc-900 '>
             {morePost.map((blog, i) => {
               return (
