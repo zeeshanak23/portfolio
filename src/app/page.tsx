@@ -96,7 +96,7 @@ export default function HomePage() {
                 </button>
               </div>
 
-              <div className='mr-4'>
+              <div>
                 <Menu />
               </div>
             </div>

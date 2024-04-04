@@ -62,7 +62,7 @@ const PostBody: FC<{ slug: string }> = ({ slug }) => {
             <Header />
 
             <div className='m-auto bg-white md:w-[1400px] dark:bg-zinc-900 dark:text-white'>
-              <div className='m-auto flex items-center justify-between bg-white p-12 md:w-[1400px] dark:bg-zinc-900'>
+              <div className='m-auto flex items-center justify-between bg-white px-8 py-4 md:w-[1400px] dark:bg-zinc-900'>
                 <button
                   onClick={() => changeColor()}
                   className='h-10 w-10 cursor-pointer'
@@ -76,7 +76,7 @@ const PostBody: FC<{ slug: string }> = ({ slug }) => {
                   <MoonLight />
                 </button>
               </div>
-              <div className='m-auto mt-[20px] flex w-[full] flex-col items-center  justify-center rounded-lg p-2  md:w-[1200px]  '>
+              <div className='m-auto  flex w-[full] flex-col items-center  justify-center rounded-lg p-2  md:w-[1200px]  '>
                 <img
                   src={blogPost.coverImage}
                   className='  h-[250px]  w-[full] rounded-lg  border-4 border-gray-400  object-cover p-1 md:h-[600px] md:w-[1200px]'
@@ -96,7 +96,7 @@ const PostBody: FC<{ slug: string }> = ({ slug }) => {
                 </div>
                 <hr className='m-[20px]' />
                 <div className='flex flex-col-reverse md:flex-row'>
-                  <div className='flex items-center rounded border-none p-6  text-center md:flex  md:w-[600px] md:flex-col  md:border-2 md:border-none md:p-0'>
+                  <div className='flex items-center rounded border-none  text-center md:flex  md:w-[600px] md:flex-col  md:border-2 md:border-none md:p-0'>
                     <Avatar picture={blogPost.author.picture} name={''} />
                     <h1 className='text-left text-[15px] text-black	 dark:text-white '>
                       {blogPost.author.name}
